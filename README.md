@@ -177,7 +177,7 @@ Before we start writing LinkBoard routes, you'll want to add some files I've alr
 
 This workshop focuses mostly on backend so I didn't want to get to bogged down in the front end. 
 
-In this repository, there is a folder called `linkboard` which contains the completed LinkBoard code from this workshop. You can refer to this anytime you get lost. In that folder, there is a `views` folder. Go ahead and copy/paste the files in that folder into the views folder of your linkboard project. In addition, go ahead and copy/paste the `public/stylesheets/stylesheet.css` into your own project as well.
+In this repository, there is a folder called `linkboard-complete` which contains the completed LinkBoard code from this workshop. You can refer to this anytime you get lost. In that folder, there is a `views` folder. Go ahead and copy/paste the files in that folder into the views folder of your linkboard project. In addition, go ahead and copy/paste the `public/stylesheets/stylesheet.css` into your own project as well.
 
 Feel free to take a look at each EJS file. Essentially, you use embedded JavaScript to tell the server when/what/where to embed dynamic data into a web page. The data that gets passed into these files is determined by the routes that we define. 
 

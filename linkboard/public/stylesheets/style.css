@@ -1,0 +1,136 @@
+/*
+  Hey all ~~~ The CSS for this isn't super clean but it works!
+  THis is a backend workshop after all...
+*/
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #FBFEF9;
+}
+
+h1 {
+  color: #0C6291;
+  font-size: 32px;
+  margin: 0;
+  display: inline;
+}
+
+h1 a {
+  color: #0C6291;
+  text-decoration: none;
+}
+
+a {
+  color: #A63446;
+}
+
+/* Styles for forms */
+form.new-link-form {
+  padding: 20px;
+  border-radius: 3px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+}
+
+.label {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+input[type=text] {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=submit] {
+  background: #A63446;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 0;
+  border-radius: 5px;
+  border: none;
+}
+
+.new-link {
+  background: #A63446;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+  display: inline-block;
+  margin: 0;
+  border-radius: 5px;
+  float: right;
+}
+
+/* Layout classes */
+.container {
+  width: 93.75%;
+  max-width: 960px;
+  margin: 50px auto;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.clear {
+  clear: both;
+}
+
+/* Styles for link posts */
+.links {
+  border-radius: 3px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+}
+
+.link {
+  border-radius: 3px;
+  background: #FFFFFF;
+  padding: 15px;
+  border-bottom: 1px solid #EDEDED;
+}
+
+/* Styles for comments */
+.comments {
+  border-radius: 3px;
+  padding: 15px;
+  margin-top: 25px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.15);
+}
+
+.comment {
+  padding: 15px 0;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.comment textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 2px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  padding: 10px;
+  font-size: 16px;
+  height: 5em;
+}
+
+/* Used to display errors */
+.error {
+  padding: 15px;
+  border-radius: 3px;
+  background: #E37171;
+  border: 1px solid #B84949;
+  margin-bottom: 15px;
+  color: #FFFFFF;
+}

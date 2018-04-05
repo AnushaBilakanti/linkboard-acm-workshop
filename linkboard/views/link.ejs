@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= link.title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <h1><a href='/'>Linkboard</a></h1>
+        <a href='/new' class='new-link'>New Link</a><br>
+        <div class='clear'></div>
+      </div>
+        
+      <div class='links'>
+        <div class='link'>
+          <h2>
+              <a href='<%= link.url %>'>
+                <%= link.title %>
+              </a>
+            </h2>
+
+            <h3>Posted by <%= link.user %> in <a href='/lb/<%= link.community %>'><%= link.community %></a></h3>
+        </div>
+      </div>
+
+      <div class='comments'>
+        <h2><%= link.comments.length %> comment(s)</h2>
+
+        <form action='/link/<%= link._id %>/comment' method='POST' class='comment'>
+          <textarea name='comment'></textarea>
+          <br>
+          <input type='submit'>
+        </form>
+
+        <% for (var comment of link.comments) { %>
+          <div class='comment'>
+            <%= comment %>
+          </div>
+        <% } %>
+
+      </div>
+  </body>
+</html>

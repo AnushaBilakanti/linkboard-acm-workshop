@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linkboard</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <h1><a href='/'>Linkboard</a></h1>
+        <a href='/new' class='new-link'>New Link</a><br>
+        <div class='clear'></div>
+      </div>
+
+      <h2><%= message %></h2>
+      <h3><%= error.status %></h3>
+      <pre><%= error.stack %></pre>
+    </div>
+  </body>
+</html>

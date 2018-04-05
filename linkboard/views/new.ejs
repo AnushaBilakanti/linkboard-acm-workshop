@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Link</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div class='container'>
+      <div class='header'>
+        <h1><a href='/'>Linkboard</a></h1>
+        <a href='/new' class='new-link'>New Link</a><br>
+        <div class='clear'></div>
+      </div>
+        
+      <% if (locals.error) { %>
+        <div class='error'>
+          <%= error %>
+        </div>
+      <% } %>
+
+      <form action='/new' method='post' class='new-link-form'>
+        <span class='label'>Title:</span><br> <input type='text' name='title'><br><br>
+        <span class='label'>URL:</span><br> <input type='text' name='url'><br><br>
+        <span class='label'>Community:</span><br> <input type='text' name='community'><br><br>
+        <span class='label'>User:</span><br> <input type='text' name='user'><br><br>
+
+        <input type='submit'>
+      </form>
+  </body>
+</html>
